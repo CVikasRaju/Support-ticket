@@ -23,7 +23,7 @@
 
 **TF-IDF + Logistic Regression / Random Forest · Sentence-Transformers · Streamlit · 6000 synthetic + 3.2k real tickets**
 
-[🚀 Quick Start](#-quick-start-3-commands) · [🖥️ Live Demo](#-demo) · [🏗️ Architecture](#-architecture) · [📊 Results](#-results--benchmarks) · [🐛 Report Bug](https://github.com/anomalyco/opencode/issues)
+[🚀 Quick Start](#-quick-start-3-commands) · [🖥️ Live Demo](#-demo) · [🏗️ Architecture](#-architecture) · [📊 Results](#-results--benchmarks)
 
 </div>
 
@@ -53,7 +53,7 @@
 17. [☁️ Deployment](#️-deployment)
 18. [🔒 Security & Privacy — .gitignore Deep Dive](#-security--privacy)
 19. [❓ FAQ & Troubleshooting](#-faq--troubleshooting)
-20. [🗺️ Roadmap](#️-roadmap) · [🤝 Contributing](#-contributing) · [📄 License](#-license) · [🙏 Acknowledgements](#-acknowledgements) · [📬 Contact](#-contact)
+20. [🗺️ Roadmap](#️-roadmap) · [🤝 Contributing](#-contributing) · [📄 License](#-license) · [🙏 Acknowledgements](#-acknowledgements)
 
 </details>
 
@@ -352,7 +352,6 @@ Open **http://localhost:8501** → paste ticket → **Classify**.
 <summary><b>Windows (PowerShell)</b></summary>
 
 ```powershell
-git clone https://github.com/YOUR_USER/support-ticket-classifier.git
 cd "Support Ticket Classification & Prioritization"
 python -m venv .venv
 .venv\Scripts\activate
@@ -371,7 +370,6 @@ streamlit run app.py
 <summary><b>macOS / Linux (bash)</b></summary>
 
 ```bash
-git clone https://github.com/YOUR_USER/support-ticket-classifier.git
 cd "Support Ticket Classification & Prioritization"
 python3 -m venv .venv
 source .venv/bin/activate
@@ -804,7 +802,6 @@ MiniLM needs ~500 MB peak. Close browsers or set `batch_size=32` in `train_embed
 We love PRs! Quick guide:
 
 ```bash
-git clone https://github.com/YOUR_USER/support-ticket-classifier.git
 git checkout -b feat/add-shap
 pip install -r requirements.txt
 python src/train.py && python src/evaluate.py  # must still hit 1.00 / 0.94
@@ -847,23 +844,8 @@ Built with ☕ for support teams who deserve **zero backlog**.
 
 ---
 
-## 📬 Contact
-
-**Author:** Internship Project — Support Ticket Classification & Prioritization
-
-- GitHub: `YOUR_USER/support-ticket-classifier` (replace with your repo)
-- Issues: [Report bug / Request feature](https://github.com/anomalyco/opencode/issues)
-- Email: `your.email@example.com` (replace)
-- LinkedIn: `linkedin.com/in/your-profile`
-
-> ⭐ **If this saved you triage time, please star the repo!**
-
----
-
 <div align="center">
 
-**Run** `streamlit run app.py` · **Train** `python src/train.py` · **Evaluate** `python src/evaluate.py` · **Generate** `python src/generate_synthetic_data.py`
-
-<sub>Made for internships · Ready for production · 101/10 README · Last updated 2026-08-30</sub>
+<sub>Support Ticket Classification & Prioritization — built for automated triage with TF-IDF + Transformers</sub>
 
 </div>
