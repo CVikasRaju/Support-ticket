@@ -1,28 +1,113 @@
-# Python
+# ── Python ──────────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 *.egg-info/
 dist/
 build/
+*.egg
+*.whl
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
 
-# Data (regenerable from scripts)
+# ── Virtual Environments ────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+.env/
+venv*/
+.conda/
+
+# ── Secrets & Credentials (CRITICAL - never commit) ─────────
+.env
+.env.*
+!.env.example
+*.env
+secrets.toml
+.streamlit/secrets.toml
+credentials.json
+credentials.toml
+kaggle.json
+.kaggle/
+*.key
+*.pem
+*.p12
+*.pfx
+*_rsa
+*_dsa
+*.kdb
+service-account*.json
+openai*.key
+hf_token
+.env.local
+.env.development.local
+.env.production.local
+
+# ── Data (regenerable / sensitive) ──────────────────────────
 data/
-results/
+*.csv
+*.tsv
+*.parquet
+*.jsonl
+dataset/
+datasets/
 
-# Trained models (regenerable from training scripts)
+# ── Trained Models & Large Artifacts ────────────────────────
 models/
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.model
+sentence_model/
+checkpoints/
 
-# IDE
+# ── Results & Outputs (regenerable) ─────────────────────────
+results/
+outputs/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# ── Jupyter ─────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+!docs/*.ipynb
+
+# ── IDE ─────────────────────────────────────────────────────
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
 
-# OS
+# ── OS ──────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Freebuff internal
-.freebuff/
-
-# Logs
+# ── Logs ────────────────────────────────────────────────────
 *.log
+logs/
+*.out
+*.err
+
+# ── Internal ────────────────────────────────────────────────
+.freebuff/
